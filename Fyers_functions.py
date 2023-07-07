@@ -122,7 +122,7 @@ for i in range(0,len(main_df.index)):
         pass
 
 # create zip and send to telegram
-shutil.make_archive(f'data/{next_coming_thursday}', 'zip', f'datafiles/{next_coming_thursday}')
+shutil.make_archive(f'datafiles/{next_coming_thursday}', 'zip', f'data/{next_coming_thursday}')
 
 def send_message(message):
     print(message)
