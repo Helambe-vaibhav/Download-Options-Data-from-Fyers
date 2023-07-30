@@ -18,14 +18,14 @@ id  = '5217068980'
 
 class investing():
     def __init__(self):
-        self.client_id='8NIKVBPVPZ-100'
+        self.client_id='your client id'
         self.base_access_token = self.get_access_token()
         self.fyers = fyersModel.FyersModel(client_id=self.client_id, token=self.base_access_token ,log_path='logfiles')
         self.download_data(symbol='NSE:NIFTY50-INDEX',Nifty50=True)
 
     def get_access_token(self):
         # Variables
-        secret_key ='1K2F1PLRNU'
+        secret_key ='your secret key'
         redirect_uri = 'https://www.google.com/'
         response_type = 'code'
 
